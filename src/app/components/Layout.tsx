@@ -15,14 +15,17 @@ function Sidebar() {
   return (
     <aside className="w-64 bg-[#1E293B] text-white flex flex-col min-h-screen font-['Inter'] fixed top-0 left-0 bottom-0 z-50">
       {/* Brand */}
-      <div className="h-20 flex items-center px-5 border-b border-slate-700/50">
+      <div className="h-20 flex items-center px-4 border-b border-slate-700/50 gap-3">
         <img
           src="/hsr-logo.png"
           alt="HSR Motors"
-          className="h-14 w-auto object-contain drop-shadow-lg"
+          className="h-12 w-12 object-contain rounded-lg shrink-0"
         />
+        <div>
+          <h1 className="font-bold text-white text-base leading-tight">LeadPilot</h1>
+          <p className="text-[10px] text-slate-400 font-medium tracking-widest uppercase mt-0.5">HSR Motors</p>
+        </div>
       </div>
-
 
       {/* Section Label */}
       <div className="px-5 pt-5 pb-2">
