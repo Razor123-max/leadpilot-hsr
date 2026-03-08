@@ -1,5 +1,5 @@
 import { NavLink, Outlet, useLocation } from 'react-router';
-import { LayoutDashboard, Users, UserRound, Kanban, Bell, Settings, ChevronRight, Car } from 'lucide-react';
+import { LayoutDashboard, Users, UserRound, Kanban, Bell, Settings, ChevronRight } from 'lucide-react';
 import { cn } from '../utils';
 
 function Sidebar() {
@@ -15,17 +15,14 @@ function Sidebar() {
   return (
     <aside className="w-64 bg-[#1E293B] text-white flex flex-col min-h-screen font-['Inter'] fixed top-0 left-0 bottom-0 z-50">
       {/* Brand */}
-      <div className="h-16 flex items-center px-6 border-b border-slate-700/50">
-        <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-lg bg-[#1A73E8] flex items-center justify-center shadow-sm shadow-blue-800/40">
-            <Car className="w-5 h-5 text-white" />
-          </div>
-          <div>
-            <h1 className="font-bold text-white leading-tight text-base">LeadPilot</h1>
-            <p className="text-[10px] text-slate-400 font-medium tracking-wide uppercase">HSR Motors</p>
-          </div>
-        </div>
+      <div className="h-20 flex items-center px-5 border-b border-slate-700/50">
+        <img
+          src="/hsr-logo.png"
+          alt="HSR Motors"
+          className="h-14 w-auto object-contain drop-shadow-lg"
+        />
       </div>
+
 
       {/* Section Label */}
       <div className="px-5 pt-5 pb-2">
